@@ -5,7 +5,7 @@
 Git Course Project
 
 ### Description
-Describe what your project is about and what it does
+This project is to show the task completition of the git repository course in Udacity. 
 
 ### Files used
 Include the files used
