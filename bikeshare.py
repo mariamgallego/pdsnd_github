@@ -279,6 +279,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
+## PART IV: Optional Data Shown
 ###Next we are going to give the option to the user of seeing 5 rows of raw data. They can keep on seeing new rows until they select no. In which they would have the option to restart the whole filtering process again.
         
         print("\nYou have the option to see five rows of unfiltered data. Would you like to see them? Please, select yes or no\n ")
