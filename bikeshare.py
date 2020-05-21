@@ -8,6 +8,9 @@ CITY_DATA = {'chicago':'chicago.csv',
 """ Defining dictionary key as city names and values as respective csv file's to
 access them according to the user input """
 
+## PART I: Defining the metrics for the project (city, month, day)
+
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
