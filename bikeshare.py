@@ -110,34 +110,6 @@ def load_data(city,month,day):
     return df
 
 
-def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
-
-    print('\nCalculating The Most Frequent Times of Travel...\n')
-    start_time = time.time()
-
-    # TO DO: display the most common month
-
-    common_month = df['month'].mode()[0]
-    print('The Most Common Month of the year is:', common_month)
-
-
-    # TO DO: display the most common day of week
-
-    common_day = df['week_days'].mode()[0]
-    print('The Most Common Day of the Week is:', common_day)
-
-    # TO DO: display the most common start hour
-
-    df['hour'] = df['Start Time'].dt.hour
-    common_hour = df['hour'].mode()[0]
-    print('The Most Common Hour of the Day is:', common_hour)
-
-
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
-
-
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -165,7 +137,33 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+def time_stats(df):
+    """Displays statistics on the most frequent times of travel."""
 
+    print('\nCalculating The Most Frequent Times of Travel...\n')
+    start_time = time.time()
+
+    # TO DO: display the most common month
+
+    common_month = df['month'].mode()[0]
+    print('The Most Common Month of the year is:', common_month)
+
+
+    # TO DO: display the most common day of week
+
+    common_day = df['week_days'].mode()[0]
+    print('The Most Common Day of the Week is:', common_day)
+
+    # TO DO: display the most common start hour
+
+    df['hour'] = df['Start Time'].dt.hour
+    common_hour = df['hour'].mode()[0]
+    print('The Most Common Hour of the Day is:', common_hour)
+
+
+    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('-'*40)
+    
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
