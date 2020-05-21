@@ -8,8 +8,8 @@ Git Course Project
 This project is to show the task completition of the git repository course in Udacity. 
 
 ### Files used
-Include the files used
+The files used for this project are the datasets and the code used for the US Bikeshare project of the same nanodegree
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Credits go to Udacity for providing the datasets and the knowledge to carry out multiple projects to leverage on data science practices
 
