@@ -112,6 +112,7 @@ def load_data(city,month,day):
     print('-'*40)
     return df
 
+## PART II: Defining Statistics
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
@@ -237,6 +238,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+## PART III: Defining User Interaction
 
 def main():
     while True:
