@@ -2,7 +2,7 @@
 21/05/2020
 
 ### Project Title
-Replace the Project Title
+Git Course Project
 
 ### Description
 Describe what your project is about and what it does
