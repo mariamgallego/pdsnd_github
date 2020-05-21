@@ -163,32 +163,8 @@ def time_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-    
-def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
 
-    print('\nCalculating Trip Duration...\n')
-    start_time = time.time()
-
-    # TO DO: display total travel time
-
-    total_travel_time = sum(df['Trip Duration'])
-    #I want to show the time in days and months to make it more understandable. In order to get the total travel time in these formats, we need to divide the total_travel_time value by 86400, to get the figure in days (since those are the number of seconds in a day) and by 2628002.88, to get the figure in months (since those are the number of seconds in a month) 
-    print('The Total travel time is:', total_travel_time/86400, " Days", "or", total_travel_time/2628002.88, " Months")
-
-
-    # TO DO: display mean travel time
-
-    avg_travel_time = df['Trip Duration'].mean()
-    #Same as above, I want to get the average time not in seconds, in this case I want to represent it in minutes. Therefore in order to get the avg time in minutes we need to divide the avg_travel_time value by 60. 
-    print('The Average Time Spent per Trip is:',  avg_travel_time/60, " Minutes")
-
-
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
-
-
-def user_stats(df):
+ def user_stats(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
@@ -230,7 +206,33 @@ def user_stats(df):
       print("\nSorry, the Most Recent Birth Year of our Users is not available for this filtering.")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+    print('-'*40)   
+
+def trip_duration_stats(df):
+    """Displays statistics on the total and average trip duration."""
+
+    print('\nCalculating Trip Duration...\n')
+    start_time = time.time()
+
+    # TO DO: display total travel time
+
+    total_travel_time = sum(df['Trip Duration'])
+    #I want to show the time in days and months to make it more understandable. In order to get the total travel time in these formats, we need to divide the total_travel_time value by 86400, to get the figure in days (since those are the number of seconds in a day) and by 2628002.88, to get the figure in months (since those are the number of seconds in a month) 
+    print('The Total travel time is:', total_travel_time/86400, " Days", "or", total_travel_time/2628002.88, " Months")
+
+
+    # TO DO: display mean travel time
+
+    avg_travel_time = df['Trip Duration'].mean()
+    #Same as above, I want to get the average time not in seconds, in this case I want to represent it in minutes. Therefore in order to get the avg time in minutes we need to divide the avg_travel_time value by 60. 
+    print('The Average Time Spent per Trip is:',  avg_travel_time/60, " Minutes")
+
+
+    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
+
+
 
 
 def main():
